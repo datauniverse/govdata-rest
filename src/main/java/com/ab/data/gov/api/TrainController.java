@@ -19,7 +19,7 @@ import com.ab.data.gov.entities.Train;
 @RestController
 public class TrainController {
 
-	@RequestMapping(value = "/train", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/trains", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Collection<Train>> getTrains() {
 		
 		Collection<Train> trains = GovernmentDataAccess.GetTrains();
